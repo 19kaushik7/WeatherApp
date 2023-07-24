@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WeatherApp - provide a national and local weather forecast for cities, as well as weather radar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a18b3ea7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="heading-container">
+        <div class="switch-box">
+            <p>Mode</p>
+            <div class="switch">
+                <i class="fa fa-moon-o" id="modeBtn"></i>
+            </div>
+        </div>
+        <h2>Weather<span>App</span></h2>
+        <p>Provide Weather Report in Your Current City</p>
+        <img src="/Globe.webp" alt="">
+    </div>
+    <div class="weather-container mode">
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="City Name" id="cityVal" class="input">
+                <button type="button" class="button" id="searchBtn"><i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="information-box">
+           
+            <div class="import-info">
+                <div class="time-info">
+                    <h3 id="time"></h3>
+                    <h5 id="todayDate"></h5>
+                </div>
+                <div class="info">
+                    <h6>Humidity</h6>
+                    <p class="huminity"><span id="minity">0</span>%</p>
+                    <h6>Wind Speed</h6>
+                    <p class="wind-speed"><span id="speed">0</span> km/h</p>
+                    <h6>Sunrise</h6>
+                    <p class="sunrise">0.00<span id="morning">A.M</span></p>
+                    <h6>Sunset</h6>
+                    <p class="sunset">0.00<span id="evening">P.M</span></p>
+                    <h6>Weather</h6>
+                    <p class="weather">Not Found</p>
+                </div>
+          
+            </div>
+            <div class="city-info">
+                <h5 id="cityName">Not Found</h5>
+            </div>
+        </div>
+        <div class="other-information">
+            <img src=""  id="img">
+            <h1 id="celcious"><span id="temp">0</span>&degC</h1>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
