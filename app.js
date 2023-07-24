@@ -66,7 +66,7 @@ async function getWeather(rec) {
               
               document.querySelector('#cityName').innerHTML = response_data.message;
               document.querySelector('#cityName').style.color = "Red";
-              document.querySelector('#img').src = '/cat-gray.gif';
+              document.querySelector('#img').src = 'cat-gray.gif';
               document.querySelector('#minity').innerHTML =  "00";
               document.querySelector('#speed').innerHTML =   "00";
               document.querySelector('.weather').innerHTML = "None";
