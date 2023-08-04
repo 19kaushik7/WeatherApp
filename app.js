@@ -72,6 +72,7 @@ async function getWeather(rec) {
               document.querySelector('.weather').innerHTML = "None";
               document.querySelector('.sunrise').textContent =  "0.00";
             document.querySelector('.sunset').textContent = "0.00";
+            document.querySelector('#temp').innerHTML = '00';
               alert("City Not Found");
         }
        
